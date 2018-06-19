@@ -7,6 +7,7 @@ html{
 }
 
 h1{
+  font-size: 48px;
   font-size: 3rem;
   font-weight: bold;
   color: rgb(70, 70, 70);
@@ -14,6 +15,7 @@ h1{
 
 h2{
   color: rgb(70, 70, 70);
+  font-size: 32px;
   font-size: 2rem;
   font-weight: bold;
 }
@@ -21,47 +23,68 @@ h2{
 h3{
   color: rgb(90,90,90);
   font-weight: 500;
+  font-size: 24px;
   font-size: 1.5rem;
 }
 
 .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 /* Header */
 
 header{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 64px;
   height: 4rem;
+  padding: 0px 24px;
   padding: 0rem 1.5rem;
 }
 
 .header-logo{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  height: 32px;
   height: 2rem;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   cursor: pointer;
 }
 
 .header-logo img {
+  height: 32px;
   height: 2rem;
   width: auto;
 }
 
 header nav{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 #colmar{
   color: black;
   font-weight: 600;
+  font-size: 22.4px;
   font-size: 1.4rem;
 }
 
 #academy{
   font-weight: 200;
+  font-size: 22.4px;
   font-size: 1.4rem;
   color: rgba(107, 125, 145, 1);
 
@@ -70,6 +93,7 @@ header nav{
   font-weight: 600;
 
   background-color: rgba(24, 60, 143, .2);
+  padding: 4px 16px;
   padding: .25rem 1rem;
   border-radius: 5px;
 }
@@ -94,8 +118,13 @@ header nav{
 
 
 header nav span {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 16px;
   margin-left: 1rem;
   vertical-align: inherit;
 }
@@ -103,7 +132,8 @@ header nav span {
 header nav a:hover{
   font-weight: 500;
   color: rgba(24, 60, 143, .2);
-  transition-timing-function: ease-in;
+  -webkit-transition-timing-function: ease-in;
+          transition-timing-function: ease-in;
 }
 
 header nav a:active{
@@ -121,8 +151,12 @@ header nav a:active{
 
 
 .hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: lightgrey;
   padding: 32px 24px;
 
@@ -131,6 +165,7 @@ header nav a:active{
 .hero-img{
   display: block;
   width: 60%;
+  margin-right: 24px;
   margin-right: 1.5rem;
 }
 
@@ -138,21 +173,32 @@ header nav a:active{
   width: 100%;
   height: auto;
   opacity: .8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
 }
 
 .hero-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 30%;
 }
 
 .hero-info h1{
+  margin-bottom: 32px;
   margin-bottom: 2rem;
 }
 
 .hero-info h3{
+  font-size: 32px;
   font-size: 2rem;
+  margin-bottom: 24px;
   margin-bottom: 1.5rem;
 }
 
@@ -161,9 +207,11 @@ header nav a:active{
 .start-here {
   background-color: grey;
 
+  padding: 8px 8px;
   padding: .5rem .5rem;
   color: white;
   border: 0;
+  font-size: 20.8px;
   font-size: 1.3rem;
   font-weight: lighter;
   cursor: pointer;
@@ -171,12 +219,14 @@ header nav a:active{
 
 .start-here:hover{
   background-color: rgba(35, 86, 204, .2);
-  transition-delay: 50ms;
+  -webkit-transition-delay: 50ms;
+          transition-delay: 50ms;
 }
 
 .start-here:active{
   background-color: rgba(24, 60, 143, .2);
-  transition-duration: 100ms;
+  -webkit-transition-duration: 100ms;
+          transition-duration: 100ms;
 }
 
 .start-here:focus {
@@ -186,14 +236,22 @@ header nav a:active{
 /* Main */
 
 .main {
+  display:-webkit-box;
+  display:-ms-flexbox;
   display:flex;
   width: 100%;
 }
 
 .main-info {
+  display:-webkit-box;
+  display:-ms-flexbox;
   display:flex;
   width: 60%;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 32px 24px;
   margin: 2rem 1.5rem;
 }
 
@@ -202,14 +260,17 @@ header nav a:active{
 }
 
 .main-info h2{
+  padding: 32px 0px 24px 0px;
   padding: 2rem 0rem 1.5rem 0rem;
 }
 
 .main-info p{
+  margin-bottom: 32px;
   margin-bottom: 2rem;
 }
 
 #quote {
+  font-size: 12.8px;
   font-size: .8rem;
   font-weight: 300;
   font-style: italic;
@@ -218,22 +279,38 @@ header nav a:active{
 /* Side info */
 
 .side-info{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 40%;
   border-left: lightgrey solid 2px;
+  padding: 32px 0px;
   padding: 2rem 0rem;;
 }
 
 .side-info ul {
+  display:-webkit-box;
+  display:-ms-flexbox;
   display:flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .side-info li {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-bottom: lightgrey solid 2px;
+  padding: 16px 16px;
   padding: 1rem 1rem;
   cursor: pointer;
 }
@@ -246,6 +323,7 @@ header nav a:active{
   display:block;
   width: 35%;
   height: 100%;
+  margin-right: 16px;
   margin-right: 1rem;
 }
 
@@ -255,10 +333,17 @@ header nav a:active{
 }
 
 .side-info-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 65%;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .side-info-text a{
@@ -266,10 +351,12 @@ header nav a:active{
 }
 
 .side-info-text h3{
+  margin-bottom: 8px;
   margin-bottom: .5rem;
 }
 
 .side-info-text p{
+  margin-bottom: 8px;
   margin-bottom: .5rem;
 }
 
@@ -295,28 +382,45 @@ header nav a:active{
 /* Courses */
 
 .start-learning{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-color: lightgrey;
+  padding: 32px 56px 0px 56px;
   padding: 2rem 3.5rem 0rem 3.5rem;
 }
 
 .start-learning h1{
   text-align: center;
+  padding-bottom: 32px;
   padding-bottom: 2rem;
 }
 
 .courses {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .course {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 30%;
   background-color: white;
+  margin: 0px 16px 32px 16px;
   margin: 0rem 1rem 2rem 1rem;
   cursor: pointer;
 }
@@ -332,12 +436,19 @@ header nav a:active{
 }
 
 .course-info{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 16px 16px;
   padding: 1rem 1rem;
 }
 
 .course-info p:nth-of-type(1){
+  margin: 8px 0px;
   margin: .5rem 0rem;
 }
 
@@ -348,14 +459,17 @@ header nav a:active{
 .courses li:hover,
 .mobile-courses li:hover{
   background-color: rgba(35, 86, 204, .2);
-  transition-delay: 50ms;
+  -webkit-transition-delay: 50ms;
+          transition-delay: 50ms;
 }
 
 .courses li:active,
 .mobile-courses li:active{
   background-color: rgba(24, 60, 143, .2);
-  transition-duration: 100ms;
+  -webkit-transition-duration: 100ms;
+          transition-duration: 100ms;
   opacity: .7;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
 }
 
 
@@ -363,20 +477,33 @@ header nav a:active{
 /* exhibit */
 
 .exhibit{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 32px 24px;
   padding: 2rem 1.5rem;
 }
 
 .exhibit h1{
   text-align: center;
+  margin-bottom: 32px;
   margin-bottom: 2rem;
 }
 
 .main-exhibit {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 60%;
+  margin-right: 24px;
   margin-right: 1.5rem;
 
 
@@ -386,20 +513,24 @@ header nav a:active{
   display: block;
   width: 100%;
   height: auto;
+  margin-bottom: 24px;
   margin-bottom: 1.5rem;
 }
 
 .main-exhibit h3{
+  margin-bottom: 8px;
   margin-bottom: .5rem;
 }
 
 .main-exhibit p{
+  margin-bottom: 32px;
   margin-bottom: 2rem;
 }
 
 
 .exhibit .side-info{
   border: none;
+  padding: 0px;
   padding: 0rem;
 
 }
@@ -430,22 +561,34 @@ header nav a:active{
 /* Footer */
 
 footer{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-top: lightgrey solid 2px;
+  padding: 16px 24px;
   padding: 1rem 1.5rem;
 }
 
 .copyright{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .terms-conditions{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .terms-conditions span{
+  margin-left: 16px;
   margin-left: 1rem;
 }
 
@@ -480,20 +623,30 @@ header nav {
 }
 
 .mobile-nav{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 100%;
 }
 
 .mobile-nav img:hover{
   opacity: .6;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
 }
 
 /* hero */
 
 .hero {
-  flex-direction: column;
-  align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+              -ms-grid-row-align: flex-start;
+          align-items: flex-start;
   padding: 0rem;
   margin: auto;
 }
@@ -528,6 +681,8 @@ header nav {
 
 
   .mobile.side-info{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     border: none;
     padding: 0rem;
@@ -536,9 +691,15 @@ header nav {
   }
 
   .side-info li {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     border: none;
-    align-items: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+                -ms-grid-row-align: flex-start;
+            align-items: flex-start;
     cursor: pointer;
   }
 
@@ -580,8 +741,13 @@ header nav {
   }
 
   .mobile-courses{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding: 0rem 1rem;
   }
 
